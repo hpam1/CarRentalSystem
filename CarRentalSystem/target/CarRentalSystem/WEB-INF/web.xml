@@ -1,0 +1,72 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>LoginFilter</filter-name>
+  	<display-name>LoginFilter</display-name>
+  	<description></description>
+  	<filter-class>ssdi.carrentalsystem.filter.LoginFilter</filter-class>
+  	<init-param>
+		<param-name>excludeLoginPage</param-name>
+		<param-value>/login.jsp</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>excludeLoginServlet</param-name>
+    	<param-value>/Login</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>excludeStyle</param-name>
+    	<param-value>/CRSStyles.css</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>excludeHeader</param-name>
+    	<param-value>/header-about.jpg</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>excludeFooter</param-name>
+    	<param-value>/footer.jpg</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>excludeRegPage</param-name>
+    	<param-value>/RegView.jsp</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>ExcludeRegSuccess</param-name>
+    	<param-value>/RegSuccess.jsp</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>ExcludeRegServlet</param-name>
+    	<param-value>/CRSRegisterController</param-value>
+    </init-param>   
+  </filter>
+  <filter-mapping>
+  	<filter-name>LoginFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+    <servlet>
+    <servlet-name>CRSRentalHistoryController</servlet-name>
+    <servlet-class>ssdi.carrentalsystem.controller.CRSRentalHistoryController</servlet-class>
+  </servlet>
+    <servlet>
+    	<servlet-name>CRSRenew</servlet-name>
+    	<display-name>CRSRenew</display-name>
+    	<description></description>
+    	<servlet-class>ssdi.carrentalsystem.controller.CRSRenew</servlet-class>
+    </servlet>
+  <servlet-mapping>
+    <servlet-name>CRSRentalHistoryController</servlet-name>
+    <url-pattern>/order.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CRSRenew</servlet-name>
+  	<url-pattern>/CRSRenew</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+  	<welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,100 @@
+@CHARSET "ISO-8859-1";
+label {
+	font-family: "raleway", serif;
+	font-size: 16px;
+}
+
+#footerText {
+	font-family: "raleway", serif;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.star {
+	font-style: italic;
+	font-size: 14px;
+	color: #f00;
+}
+
+input[type=text],input[type=password],input[type=email] {
+	border:2px solid #a1baf3;
+	font-size:16px;
+	font-family:raleway;
+	background-color: #fff;
+}
+
+input[type=submit], input[type=button] {
+	background-color:#a1baf3;
+	color:#fff;
+	border:2px solid #ccc;
+	font-size:20px;
+	cursor:pointer;
+	border-radius:5px;
+}
+
+#centerDiv {
+	width:800px;
+	margin:15px auto;
+	border: 1px solid #a1baf3;
+}
+
+
+.loginDivs {
+	width:75%;
+	margin:15px auto;
+}
+
+.costDiv {
+	text-align: right;
+}
+
+.informationalMsg {
+	width: 100%;
+	margin: 15px auto;
+	text-align: right;
+}
+
+.erorrMsg {
+	width: 75%;
+	margin: 15px auto;
+	text-align: center;
+	font-weight: bold;
+	color: #f00;
+	font-size: 20px;
+}
+
+#error {
+	width: 75%;
+	margin: 15px auto;
+	text-align: center;
+	font-weight: bold;
+	color: #f00;
+	font-size: 12px;
+}
+
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+#header {
+	padding:10px;	
+}
+#content {
+	padding:20px;
+	padding-bottom:20px;   /* Height of the footer element */
+}
+#footer {
+	width:100%;
+	height:20px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}

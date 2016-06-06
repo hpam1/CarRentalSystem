@@ -1,0 +1,27 @@
+@CHARSET "ISO-8859-1";
+#menu {
+    font-size: 16px;
+    font-family: Raleway, serif;
+    font-weight: bold;
+	margin:15px auto;
+    background-color: #a1baf3;
+    border-radius: 8px;
+}
+
+#menu ul {
+    height: auto;
+    padding: 7px 0px;
+    margin: 0px;
+}
+
+#menu li { 
+	display: inline; 
+	padding: 20px 50px; 
+}
+
+#welcome {
+	font-size: 16px;
+    font-family: Raleway, serif;
+    font-weight: bold;
+    text-align: right;
+}
